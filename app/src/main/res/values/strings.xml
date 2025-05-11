@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="btnFloatAddNewTask">Stwórz nowe zadanie</string>
+    <string name="tvTaskName">Nazwa</string>
+    <string name="tvDescription">Opis</string>
+    <string name="tvDeadline">Termin</string>
+    <string name="etTaskName">Wpisz nazwę zadania</string>
+    <string name="etDescription">Wpisz opis zadania</string>
+    <string name="etDate">Podaj datę</string>
+    <string name="etTime">Podaj czas</string>
+    <string name="btnAddTask">Dodaj</string>
+    <string name="btnUpdateTask">Uaktualnij</string>
+    <string name="tvDateHeadline">Data</string>
+    <string name="tvTimeHeadline">Godzina</string>
+    <string name="cbStatus">Zakończone</string>
+    <string name="cbPriority">Ważne</string>
+    <string name="btnUpload">Wgraj plik</string>
+    <string name="btnDownload">Pobierz plik</string>
+    <string name="btnSortMenu">Sortuj zadania</string>
+
+
+</resources>

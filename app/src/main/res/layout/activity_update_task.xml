@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/etUpdateDescription"
+        android:layout_width="360dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="top|start"
+        android:hint="@string/etDescription"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/tvUpdateDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdateDescription" />
+
+    <EditText
+        android:id="@+id/etUpdateTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/etTaskName"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/tvUpdateTaskName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdateTaskName" />
+
+    <EditText
+        android:id="@+id/etUpdateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/etDate"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/tvUpdateDeadline"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdateDeadline" />
+
+    <EditText
+        android:id="@+id/etUpdateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/etTime"
+        android:inputType="time"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/etUpdateDate"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateDate" />
+
+    <Button
+        android:id="@+id/btnUpdateTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/btnUpdateTask"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbStatus" />
+
+    <TextView
+        android:id="@+id/tvUpdateTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvTaskName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvUpdateDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvDescription"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etUpdateTaskName"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateTaskName" />
+
+    <TextView
+        android:id="@+id/tvUpdateDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvDeadline"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etUpdateDescription"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateDescription" />
+
+    <CheckBox
+        android:id="@+id/cbStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cbStatus"
+        app:layout_constraintStart_toStartOf="@+id/cbUpdatePriority"
+        app:layout_constraintTop_toBottomOf="@+id/cbUpdatePriority" />
+
+    <CheckBox
+        android:id="@+id/cbUpdatePriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cbPriority"
+        app:layout_constraintStart_toStartOf="@+id/etUpdateTime"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateTime" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
